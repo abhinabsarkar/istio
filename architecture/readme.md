@@ -26,8 +26,8 @@ So, you can see how this type of container is perfect for a set-up or initializa
 
 ## Getting to the Control Plane
 From Istio v1.5, the control plane has been reorganized into one service i.e. *istiod* which provides proxy sidecar loading, mesh calculation, security and validation. The different components of the istiod service are mentioned below:
-* Pilot - It provides platform-specific service discovery. Also, it generates the sidecar proxy configuration and pushes them to all the envoy proxies.
-* Galley - It provides configuration management & validation for Istio
+* Pilot - Provides service discovery and traffic management policy/configuration for the proxies.
+* Galley - Abstracts and provides configuration to components. It also does validation for Istio.
 * Citadel - It provides security features by providing TLS encryption to every Envoy proxy. It also provides authentication, authorization and audit (AAA) tools to protect services and data.
 
-> Mixer Adapater plugins are reimplemented within the mesh as Envoy plugins.
+> Mixer Adapater plugins are reimplemented within the mesh as Envoy plugins. Mixer enforces access control and usage policies. Collects telemetry from the proxies that is pushed into Prometheus.

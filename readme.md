@@ -14,9 +14,6 @@ This is done by adding Istio support to services by deploying a special sidecar 
 * [Architecture](/architecture/readme.md)
 * [Istio install on Docker Desktop](/implementation/istio-install-local-readme.md)
 * [Hello Istio](/implementation/hello-istio-readme.md)
-* Features
-    * Traffic management
-    * Security
-    * Observability
-        * Visualizing Service Mesh (Kiali Addon)
-    * Policies
+* [Service Mesh features](/concepts/features-readme.md)
+* [Istio deployment models](https://istio.io/docs/ops/deployment/deployment-models/)
+* [Istio in AKS](https://docs.microsoft.com/en-us/azure/aks/servicemesh-istio-install?pivots=client-operating-system-linux)
