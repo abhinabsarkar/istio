@@ -24,7 +24,7 @@ So, you can see how this type of container is perfect for a set-up or initializa
 
 > This is explained in detail [here](https://istio.io/blog/2019/data-plane-setup/)
 
-## Getting to the Control Plane
+## Getting closer to the Control Plane
 From Istio v1.5, the control plane has been reorganized into one service i.e. *istiod* which provides proxy sidecar loading, mesh calculation, security and validation. The different components of the istiod service are mentioned below:
 * Pilot - Provides service discovery and traffic management policy/configuration for the proxies.
 * Galley - Abstracts and provides configuration to components. It also does validation for Istio.
