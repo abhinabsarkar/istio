@@ -17,7 +17,7 @@ In simple terms, sidecar injection is adding the configuration of additional con
 
 * istio-init - This init container is used to setup the iptables rules so that inbound/outbound traffic will go through the sidecar proxy. An init container is different than an app container in following ways:
     * It runs before an app container is started and it always runs to completion.
-    * If there are many init containers, each should complete with success before the next container is started.
+    * If there are many init containers, each should complete with success before the next container is started.  
 So, you can see how this type of container is perfect for a set-up or initialization job which does not need to be a part of the actual application container. In this case, istio-init does just that and sets up the iptables rules.
 
 * istio-proxy This is the actual sidecar proxy (based on Envoy).
